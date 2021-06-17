@@ -2,7 +2,7 @@
 #-----------------------------
 #Data Structures
 #List - ordered collection of items, mutable(changeable) : [square ]
-list1 = [1,2,3,4,5,'a','Dhiraj',"Upadhyaya",True]  #list type of object with data
+list1 = [1,2,3,4,5,'a','Sanjay','Sarov','Joshy',True]  #list type of object with data
 list1  #print when through spyder
 type(list1)  #type of object
 print(list1)  #print when running complete file
@@ -121,7 +121,7 @@ for i in list2:    print(i, 'DU' , sep='-' , end ='xxx')
 #a-DU-xxx ; i+sep+end
 for i in list1:    print(i , 'HHHE', sep=' X ' , end ='\t')
 print?
-for i in list1:    print('Dhiraj ', i + 6)
+for i in list1:    print('Sanjay ', i + 6)
 
 tuple1 = (1, 2, 'a', 'b')
 tuple1
@@ -159,7 +159,8 @@ list1
 import numpy
 numpy.array([10,20])
 numpy.array([list1])
-
+dir(numpy)
+help(numpy.array)
 import numpy as np #np is alias
 np1 = np.arange(1,10)
 np1
@@ -197,7 +198,7 @@ import pandas as pd
 pd?
 dir(pd)
 
-df1 = pd.DataFrame({'rollno':[1,2,3,4], 'name': [ "Dhiraj", "Kounal", "Akhil", "Pooja" ], 'marks':[ 40, 50, 60.5, 70 ], 'gender':['M', 'M','M', 'F']})
+df1 = pd.DataFrame({'rollno':[1,2,3,4,5], 'name': [ "Dhiraj", "Kajal", "Akhil", "Pooja", "Sanjay" ], 'marks':[ 40, 50, 60.5, 70, 100 ], 'gender':['M', 'F','M', 'F', 'M']})
 df1
 type(df1) 
 
@@ -232,7 +233,7 @@ sns.pairplot(iris)  #relationship diagrams
 
 #%% #Load Inbuilt Datasets
 
-#pip install pydataset
+pip install pydataset
 from pydataset import data
 data('iris')
 data('mtcars')
@@ -266,7 +267,7 @@ data2a
 data2a = pd.read_csv('mtcars.csv') #when csv is in project folder
 data2a
 data2b
-data2b = pd.read_csv('E:/analytics/projects/pyanalytics/mtcars.csv')
+data2b = pd.read_csv('D:/analytics/projects/pyanalytics/mtcars.csv')
 data2b
 #csv in any other location - full path
 data2b
